@@ -21,22 +21,22 @@ Also bams must be read-sorted.
 
 ## Example tasks
 
-Q: I want statistics about my bam like you'd get from bamdam compute, but I don't have an LCA file (e.g. it's all one taxon). 
+Q: I want statistics about my bam like you'd get from bamdam compute, but I don't have an LCA file (e.g. it's all one taxon).   
 A: Use compute-nolca. If you want separate stats for each ref ID, use --per-contig.
 
-Q: I want a damage plot from a bam, but I don't have an LCA file.
+Q: I want a damage plot from a bam, but I don't have an LCA file.   
 A: Use compute-nolca first, and then feed the output subs file into plotdamage-nolca. This will essentially replicate mapDamage behavior without requiring a reference fasta or a single reference. 
 
-Q: I want a damage plot from a bam, I don't have an LCA file, and I want a separate line for each reference ID. For example: I have reads mapped back against a metagenome-assembled genome I made, and I want a separate damage line for each contig (like pyDamage). 
+Q: I want a damage plot from a bam, I don't have an LCA file, and I want a separate line for each reference ID. For example: I have reads mapped back against a metagenome-assembled genome I made, and I want a separate damage line for each contig (like pyDamage).    
 A: Use compute-nolca with --per-contig, then feed the output subs file into plotdamage-nolca with --per-contig. 
 
-Q: I want to annotate a bam with PMD scores, like PMDtools, but I don't have an LCA file.
+Q: I want to annotate a bam with PMD scores, like PMDtools, but I don't have an LCA file.   
 A: Use the pmd function. PMDtools, as of the time of writing, has a serious bug in single-stranded mode, whereas this function does not. 
 
-Q: I want a damage plot, but I want to plot all the substitution types, not lump them in "other".
+Q: I want a damage plot, but I want to plot all the substitution types, not lump them in "other".   
 A: Use plotallsubs on any subs file. You can specify --tax or not. 
 
-Q: I hate merging, read-sorting, and stripping unnecessary headers from my bams.
+Q: I hate merging, read-sorting, and stripping unnecessary headers from my bams.   
 A: Chenxi Zhou wrote a lovely function to do this faster and with less RAM than samtools merge/sort, and it also strips your bam of unused headers on the way. You can find it implemented in Richard Durbin's onebam as "onebam bamsort". https://github.com/richarddurbin/onebam
 
 ## Usage
