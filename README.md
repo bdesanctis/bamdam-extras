@@ -7,6 +7,7 @@ This is an informal collection of standalone ancient DNA scripts that I wrote fo
 To run, clone this github repo, make executable, and run the python scripts as standalone functions. For example:
 ```
 git clone https://github.com/bdesanctis/bamdam-extras.git
+cd bamdam-extras
 chmod +x *.py
 ./compute-nolca.py --h
 ```
