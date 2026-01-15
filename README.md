@@ -14,7 +14,9 @@ chmod +x *.py
 Requires python v 3.8 or higher. Feel free to contribute or make (straightforward) requests. You can reach me at bddesanctis@gmail.com. 
 
 All functions require bams to have MD tags. If your bam doesn't have those, you can first add them with samtools:
+```
 samtools calmd -b in.bam reference.fa > out.bam
+```
 Also bams must be read-sorted.
 
 ## Example tasks
