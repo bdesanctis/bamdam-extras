@@ -22,7 +22,7 @@ Also bams must be read-sorted.
 
 ## Example tasks
 
-Q: I want statistics about my bam like you'd get from bamdam compute, but I don't have an LCA file (e.g. it's all one taxon).   
+Q: I want statistics about my bam like you'd get from bamdam compute, but I don't have an LCA file (e.g. it's all one taxon, or I want to know stats about each reference separately).   
 A: Use compute-nolca. If you want separate stats for each ref ID, use --per-contig.
 
 Q: I want a damage plot from a bam, but I don't have an LCA file.   
