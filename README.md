@@ -2,7 +2,7 @@
 
 If you're looking for the bamdam software, see [here](https://github.com/bdesanctis/bamdam#).
 
-This is an informal collection of standalone ancient DNA scripts that I wrote for myself and collaborators. It is not extensively tested, not formally supported, and may break. If you find it useful, please cite the [the bamdam paper](https://doi.org/10.1186/s13059-025-03879-x) because everything here is just repurposed [bamdam](https://github.com/bdesanctis/bamdam#) code.
+This is an informal collection of standalone ancient DNA scripts that I wrote for myself and collaborators. It is not extensively tested, not formally supported, and may break. If you find it useful, please cite the [the bamdam paper](https://doi.org/10.1186/s13059-025-03879-x) because everything here is just repurposed [bamdam](https://github.com/bdesanctis/bamdam#) code. But I thought it would be more confusing to stuff all these extra bits into the main bamdam software, so they live here.
 
 To run, clone this github repo, make executable, and run the python scripts as standalone functions. For example:
 ```
